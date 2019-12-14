@@ -1,0 +1,253 @@
+.page-bg {
+    background-image: url("../img/bg.png");
+}
+
+.txt-welcome {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.login-input {
+    margin: 100px 50px 50px;
+}
+
+input {
+    border-radius: 1.313em;
+}
+
+.head-title-sub {
+    background-color: #f3f3f3;
+    height: 38px;
+    line-height: 38px;
+    padding-right: 18px;
+}
+.head-title-desc {
+    font-size: 12px;
+    color: #555555;
+    padding-left: 18px;
+}
+.head-search-icon {
+    background: url("../img/search-icon.png") no-repeat right transparent;
+    float: right;
+    padding-right: 18px;
+    background-size: 38%;
+    margin: 0;
+    border: 0px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.result-list-main {
+}
+
+.result-list-main ul, .result-list-main li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.result-list-main > ul > li {
+    width: 100%;
+    float: left;
+    padding: 10px 0px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.result-li-left {
+    float: left;
+    margin-left: 18px;
+    width: 70%;
+    overflow: hidden;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.result-li-right {
+    float: right;
+    margin-right: 18px;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.fontcolor-name {
+    color: #333333;
+    font-size: 14px;
+}
+
+.fontcolor-date {
+    color: #666666;
+}
+
+.fontcolor-price-up {
+    color: #d85006;
+}
+
+.fontcolor-price-down {
+    color: #000000;
+}
+
+.fontcolor-status-ing {
+    color: #73d9d6;
+    font-size: 12px;
+}
+
+.fontcolor-status-over {
+    color: #2b9501;
+    font-size: 12px;
+}
+
+.panel-content {
+}
+
+.panel-back {
+    line-height: 43px;
+    font-size: 12px;
+    color: #d81e06;
+    text-align: right;
+    padding-right: 18px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ui-panel-inner {
+    margin: 0;
+    padding: 0;
+}
+.ui-page-theme-a .ui-btn {
+    background-color: transparent;
+    text-shadow: none;
+    font-weight: normal;
+    box-shadow: none;
+}
+.ui-input-text input {
+    display: inline-block;
+}
+.ui-page-theme-a .ui-body-inherit {
+    border: 0px;
+    box-shadow: none;
+}
+.ui-footer {
+    position: absolute;
+    background-color: #ffffff;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+}
+
+.ui-footer .reset-btn {
+    margin:0;
+    padding: 0;
+    width: 50%;
+    line-height: 51px;
+    background-color: #ffffff;
+    color: #d81e06;
+    float: left;
+    border: 0px;
+    font-size: 18px;
+}
+.ui-footer .confirm-btn {
+    margin:0;
+    padding: 0;
+    width: 50%;
+    line-height: 51px;
+    background-color: #d81e06;
+    color: #ffffff;
+    float: right;
+    border: 0px;
+    font-size: 18px;
+}
+
+.panel-block {
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.panel-date-button > a {
+    font-size: 12px;
+    background-color: transparent;
+    padding: 5px 15px;
+}
+
+.ui-input-text {
+    width: max-content;
+    display: inline-block;
+}
+
+.panel-block-div {
+    display: inline-block;
+}
+
+.panel-date-button .btnfocus {
+    border: 1px solid red;
+}
+
+/********************* pageOther ********************/
+.ui-content {
+    margin: 0;
+    padding: 0;
+}
+.deal-info-body ul, .deal-info-body li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.deal-info-body li {
+    padding: 0 20px;
+    line-height: 44px;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+    height: 44px;
+}
+.deal-info-body > ul > li > div {
+    display: inline-block;
+}
+.deal-info-head {
+    text-align: center;
+    line-height: 42px;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 15px;
+}
+
+.deal-info-head-name {
+    color: #444444;
+}
+.deal-info-head-price {
+    font-size: 24px;
+    color: #d85006;
+}
+.deal-info-head-status {
+    color: #ababab;
+}
+
+.deal-info-head-name {
+    background-image: url("../img/nameIcon.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px 23px;
+    width: max-content;
+    margin: 0 auto;
+    text-indent: 31px;
+    font-size: 16px;
+}
+
+.deal-info-body-key {
+    color: #333333;
+}
+
+.deal-info-body-value {
+    float: right;
+    color: #7d7d7d;
+}
+
+.page-return-icon {
+    border: 0px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(45deg);
+    width: 14px;
+    height: 14px;
+}

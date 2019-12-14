@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="js/jquery/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="js/jquery/jquery.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="js/jquery/jquery.mobile-1.4.5.min.js"></script>
+
+    <title>customer</title>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+    <input type="file" accept="image/*" id="img">
+    <div id="photo">
+
+    </div>
+</div>
+
+<script>
+    $(function() {
+        $('#img').change(function() {
+            var file = this.files[0];
+            var r = new FileReader();
+            r.readAsDataURL(file);
+            $(r).load(function() {
+                $('#photo').html('<img src="' + this.result + '" alt="" />');
+            })
+        })
+    })
+</script>
+
+
+</body>
+</html>
+

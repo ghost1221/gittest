@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="js/jquery/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/seller.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="js/jquery/jquery.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="js/jquery/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/seller.js"></script>
+    <title>商户查询</title>
+</head>
+<body>
+<div data-role="page" id="pageSearch">
+    <div data-role="header" style="background-color: #fc6825; color: #ffffff; border: 0px;">
+        <a href="javascript:returnMenu();" style="border: 0px; background-color: transparent; color: #ffffff"><div class="page-return-icon"></div></a>
+        <h3 style="font-weight: lighter;">商户查询</h3>
+        <div class="head-title-sub">
+            <span class="head-title-desc">商户数：20</span>
+        </div>
+    </div>
+    <div data-role="main" class="ui-content" style="margin: 0; padding: 0; position: absolute; overflow: auto; top: 82px; bottom: 0;">
+        <div id="search_list" class="result-list-main">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="pageOther" class="body-bg">
+    <div data-role="header" style="background-color: transparent; color: #ffffff; border: 0px;">
+        <a href="#pageSearch" style="border: 0px; background-color: transparent; color: #ffffff"><div class="page-return-icon"></div></a>
+        <h1 style="font-weight: lighter;">商户详情</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <div class="deal-info-head">
+            <div class="company-icon"></div>
+            <div class="company-title-key">
+                <div class="deal-info-head-name">代理商名字</div>
+                <div>
+                    <div class="deal-info-head-person">联系人</div>
+                    <div class="deal-info-head-phone">13011112222</div>
+                </div>
+            </div>
+        </div>
+        <div class="deal-info-body">
+            <ul>
+                <li><div class="deal-info-title font-weight-bolder">公司信息</div> </li>
+                <li><div class="deal-info-body-key">工商注册号</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">税务登记号</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">组织机构代码</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-title font-weight-bolder">银行信息</div> </li>
+                <li><div class="deal-info-body-key">收款人姓名</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">收款账号</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-title font-weight-bolder">设置信息</div> </li>
+                <li><div class="deal-info-body-key">服务费率</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">最大薪水</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">最小薪水</div><div class="deal-info-body-value"></div></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

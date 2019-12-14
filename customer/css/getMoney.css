@@ -1,0 +1,165 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active {
+    background-color: #ff7737;
+    border: 0px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: none;
+    margin: 0;
+}
+
+.ui-page-theme-a .ui-btn {
+    background-color: transparent;
+    text-shadow: none;
+    font-weight: normal;
+    box-shadow: none;
+}
+
+.page-return-icon {
+    border: 0px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(45deg);
+    width: 14px;
+    height: 14px;
+}
+
+.picture-show-cross {
+    margin: 0 auto;
+    padding: 30px 45px;
+    text-align: center;
+}
+
+.picture-show-cross > div {
+    display: inline-block;
+}
+
+.picture-1-img {
+    margin: 0 auto;
+    background-image: url("../img/fapiao.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 34px;
+}
+.picture-1-text, .picture-3-text {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.picture-2-text {
+    color: #fc6825;
+}
+
+.picture-2-img {
+    background-image: url("../img/arror.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 139px;
+    height: 16px;
+}
+
+.picture-1 {
+    float: left;
+}
+
+.picture-2 {
+    width: max-content;
+    text-align: center;
+    float: none;
+}
+
+.picture-3 {
+    float: right;
+}
+.picture-3-img {
+    margin: 0 auto;
+    background-image: url("../img/bankCard.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 34px;
+}
+
+.input-group-li {
+    margin-top: 30px;
+}
+
+.ui-field-contain > label {
+    position: absolute;
+    line-height: 40px;
+    color: #999999;
+    padding-left: 15px;
+}
+
+.ui-field-contain input {
+    border-bottom: 1px solid #eeeeee;
+    line-height: 40px;
+    border-radius: 0px;
+    margin: 0;
+    padding: 0 15px 0 110px;
+}
+.ui-page-theme-a .ui-body-inherit {
+    border: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.add-phone-tips {
+    font-size: 13px;
+    color: #ffa93a;
+    padding-left: 15px;
+}
+
+.update-file-picture {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.getMoneyBtn {
+    padding: 0 36px;
+}
+
+.getMoneyTips {
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 13px;
+    color: #999999;
+}
+
+.getMoneyTips > p {
+    margin: 0;
+    color: #ffa93a;
+}
+
+.getMoneyTips li {
+    line-height: 20px;
+}
+
+.ui-grid-c {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: center;
+    color: #333333;
+}
+
+.table-head-bold {
+    font-weight: bolder;
+}
+
+.list-date-style {
+    line-height: 20px;
+    padding-top: 7px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="js/jquery/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/getMoney.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="js/jquery/jquery.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="js/jquery/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/getMoney.js"></script>
+    <title>提现申请</title>
+</head>
+<body style="background-color: #f3f3f3;">
+<div data-role="page" id="pageSearch">
+    <div data-role="header" style="background-color: #fc6825; color: #ffffff; border: 0px;">
+        <a href="javascript:returnMenu();" style="border: 0px; background-color: transparent; color: #ffffff"><div class="page-return-icon"></div></a>
+        <h3 style="font-weight: lighter;">提现申请</h3>
+        <a href="#pageOther" style="border: 0px; background-color: transparent; color: #ffffff; line-height: 24px;">提现记录</a>
+    </div>
+    <div data-role="main" class="ui-content" style="margin: 0; padding: 0; position: absolute; overflow: auto; top: 44px; bottom: 0; width: inherit;">
+        <div class="picture-show-cross">
+            <div class="picture-1">
+                <div class="picture-1-img"></div>
+                <div class="picture-1-text">上传发票</div>
+            </div>
+            <div class="picture-2">
+                <div class="picture-2-text">银行转账</div>
+                <div class="picture-2-img"></div>
+            </div>
+            <div class="picture-3">
+                <div class="picture-3-img"></div>
+                <div class="picture-3-text">您的银行卡</div>
+            </div>
+        </div>
+        <div class="ui-field-contain" style="border-bottom: 0px;">
+            <label for="bankAccount">支付类型</label>
+            <input type="text" name="fullname" id="bankAccount" placeholder="银行卡号">
+            <label for="useMoney">可用余额</label>
+            <input type="text" name="fullname" id="useMoney" disabled>
+            <label for="getMoney">提现金额</label>
+            <input type="text" name="fullname" id="getMoney">
+            <label for="userPhone">手机号码</label>
+            <input type="text" name="fullname" id="userPhone" placeholder="请输入您的手机号码">
+        </div>
+        <div class="update-file-contain">
+            <div class="add-phone-tips">注：为了提现安全，请认真填写您的手机号码</div>
+            <div class="update-file-picture" style="position: relative;">
+                <img src="img/image-default.png" id="img_preview" width="120" height="103">
+                <div class="update-file-tips">点击图标，上传发票图片</div>
+                <input type="file" id="file_update" accept="image/*" style="display: none;">
+            </div>
+            <div class="getMoneyBtn">
+                <button class="ui-btn-active" id="getMoneyBtn">提现</button>
+            </div>
+        </div>
+        <div class="getMoneyTips">
+            <p>
+                温馨提示：
+            </p>
+            <ul>
+                <li>1、消费当天第七个工作日才能提现；</li>
+                <li>2、最低提现金额10元。</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div data-role="page" id="pageOther">
+
+    <div data-role="header" style="background-color: #fc6825; color: #ffffff; border: 0px;">
+        <a href="#pageSearch" style="border: 0px; background-color: transparent; color: #ffffff"><div class="page-return-icon"></div></a>
+        <h1 style="font-weight: lighter;">提现记录</h1>
+    </div>
+    <div data-role="main" class="ui-content" style="margin: 0;padding: 0;">
+        <div class="ui-grid-c table-head-bold"><div class="ui-block-a">时间</div><div class="ui-block-b">金额（元）</div><div class="ui-block-c">支付方式</div><div class="ui-block-d">状态</div></div>
+        <div id="list_record">
+            <div class="ui-grid-c"><div class="ui-block-a list-date-style">2019-10-22<br>11:21:34</div><div class="ui-block-b">1000.00</div><div class="ui-block-c">银行转账</div><div class="ui-block-d">完成</div></div>
+            <div class="ui-grid-c"><div class="ui-block-a list-date-style">2019-10-22<br>11:21:34</div><div class="ui-block-b">1000.00</div><div class="ui-block-c">银行转账</div><div class="ui-block-d">完成</div></div>
+            <div class="ui-grid-c"><div class="ui-block-a list-date-style">2019-10-22<br>11:21:34</div><div class="ui-block-b">1000.00</div><div class="ui-block-c">银行转账</div><div class="ui-block-d">完成</div></div>
+            <div class="ui-grid-c"><div class="ui-block-a list-date-style">2019-10-22<br>11:21:34</div><div class="ui-block-b">1000.00</div><div class="ui-block-c">银行转账</div><div class="ui-block-d">完成</div></div>
+            <div class="ui-grid-c"><div class="ui-block-a list-date-style">2019-10-22<br>11:21:34</div><div class="ui-block-b">1000.00</div><div class="ui-block-c">银行转账</div><div class="ui-block-d">完成</div></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/login.js"></script>
+    <title>login</title>
+</head>
+<body onload="onloadFn()">
+<img src="img/bg.jpg" width="100%" height="100%" style="position: absolute;">
+
+<div class="page-content">
+    <div class="text-welcome">Welcome</div>
+    <div class="login-input">
+        <div class="login-user">
+            <div class="icon-user"></div>
+            <input type="text" placeholder="账号" id="accountId">
+        </div>
+        <div class="login-passw">
+            <div class="icon-passw"></div>
+            <input type="password" placeholder="密码" id="passwordId">
+        </div>
+        <div class="login-check">
+            <div class="icon-check"></div>
+            <input type="text" placeholder="验证码" class="check-input" id="checkNumId">
+        </div>
+        <img src="img/checknum.png" width="79" height="41" id="checkImage">
+        <div class="login-button" id="loginBtn">
+            登 录
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="js/jquery/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/profit.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="js/jquery/jquery.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="js/jquery/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/profit.js"></script>
+    <title>customer</title>
+</head>
+<body>
+<div data-role="page" id="pageSearch">
+    <div data-role="header" style="background-color: #fc6825; color: #ffffff; border: 0px;">
+        <a href="javascript:returnMenu();" style="border: 0px; background-color: transparent; color: #ffffff"><div class="page-return-icon"></div></a>
+        <h3 style="font-weight: lighter;">收益查询</h3>
+        <div class="head-title-sub">
+            <span class="head-title-desc">总金额：2000.00</span>
+            <a href="#myPanel" class="head-search-icon" style="color: #d81e06;">筛选</a>
+
+        </div>
+    </div>
+    <div data-role="main" class="ui-content" style="margin: 0; padding: 0; position: absolute; overflow: auto; top: 82px; bottom: 0;">
+        <div id="search_list" class="result-list-main">
+        </div>
+    </div>
+    <div data-role="panel" id="myPanel" data-position="right" data-display="overlay" style="width: auto;">
+        <div class="panel-back"><a href="#pageSearch" data-rel="close" id="panelCloseBtn" style="color: #d81e06; text-decoration: none;">取消</a></div>
+        <div class="panel-content">
+            <div class="panel-block">
+                <p style="margin: 0 auto 10px;">交易日期</p>
+                <div class="panel-date-button panel-date-select" data-type="horizontal">
+                    <a href="#" data-role="button" data-inline="true" data-value="1" class="btnfocus">近1日</a>
+                    <a href="#" data-role="button" data-inline="true" data-value="2">近3日</a>
+                    <a href="#" data-role="button" data-inline="true" data-value="3">近1周</a>
+                    <a href="#" data-role="button" data-inline="true" data-value="4">近1月</a>
+                </div>
+            </div>
+            <div class="panel-block">
+                <div class="panel-block-div"><input type="date" id="dealDateStart"></div>
+                <div class="panel-block-div">-</div>
+                <div class="panel-block-div"><input type="date" id="dealDateEnd"></div>
+            </div>
+            <div class="panel-block">
+                <p style="margin: 0 auto 10px;">排序</p>
+                <div class="panel-date-button panel-date-order" data-type="horizontal">
+                    <a href="#" data-role="button" data-inline="true" data-value="1">升序</a>
+                    <a href="#" data-role="button" data-inline="true" data-value="2" class="btnfocus">降序</a>
+                </div>
+            </div>
+            <div data-role="footer">
+                <a href="#" class="ui-btn reset-btn">重 置</a>
+                <a href="#" class="ui-btn confirm-btn">确 定</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div data-role="page" id="pageOther">
+
+    <div data-role="header" style="background-color: #fc6825; color: #ffffff; border: 0px;">
+        <a href="#pageSearch" style="border: 0px; background-color: transparent; color: #ffffff"><div class="page-return-icon"></div></a>
+        <h1 style="font-weight: lighter;">收益明细</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <div class="deal-info-head">
+            <div class="deal-info-head-name">代理商名字</div>
+            <div class="deal-info-head-price">1000.00</div>
+            <div class="deal-info-head-status">交易成功</div>
+        </div>
+        <div class="deal-info-body">
+            <ul>
+                <li><div class="deal-info-body-key">订单号</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">交易流水号</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">交易时间</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">收款人姓名</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">收款账号</div><div class="deal-info-body-value"></div></li>
+                <li><div class="deal-info-body-key">交易金额</div><div class="deal-info-body-value"></div></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
